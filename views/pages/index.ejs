@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ../partials/head %>
+	<title></title>
+</head>
+<body>
+	<% include ../partials/header %>
+	<div class="container">
+		<div class="jumbotron">
+			<table class="table">
+			<tr>
+				<th>name</th>
+			</tr>
+			<tbody>
+				<% things.forEach(function(thing) { %>
+					<tr>
+						<th><%= thing.name %></th>
+					</tr>
+				<% }) %>
+			</tbody>
+			</table>
+		</div>
+	</div>
+	<% include ../partials/footer %>
+</body>
+</html>
