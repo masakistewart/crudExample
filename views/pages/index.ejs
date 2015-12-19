@@ -11,11 +11,13 @@
 			<table class="table">
 			<tr>
 				<th>name</th>
+				<th>id</th>
 			</tr>
 			<tbody>
 				<% things.forEach(function(thing) { %>
 					<tr>
 						<th><%= thing.name %></th>
+						<th><%= thing.id %></th>
 					</tr>
 				<% }) %>
 			</tbody>
